@@ -1,0 +1,43 @@
+header{
+    color: white;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MENU */
+
+.header_menu {
+    background: #0F41F6;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    width: 1000px;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+    
+}
+
+li {
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 80px;
+    padding: 20px;
+}
+
+/* HERO */
+
+.header__hero {
+    width: 100vw;
+    height: 500px;
+    background-color: antiquewhite;
+}

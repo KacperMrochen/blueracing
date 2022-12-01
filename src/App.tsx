@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './Styles/App.css';
+import Header from './Components/Header';
+import Kart from './Components/Kart';
+import Races from './Components/Races';
+import QuoteBlock from './Components/QuoteBlock';
+import Video from './Components/Video';
+import Banner from './Components/Banner';
+import Footer from './Components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header></Header>
+      <Kart></Kart>
+      <QuoteBlock></QuoteBlock>
+      <Races></Races>
+      <Video></Video>
+      <Banner></Banner>
+      <Footer></Footer>
     </div>
   );
 }
