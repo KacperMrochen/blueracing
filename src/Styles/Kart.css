@@ -1,0 +1,38 @@
+.karts {
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.karts__carousel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.kart_card {
+    flex: 1 1 auto;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    margin: 10px 20px;
+    padding: 10px 20px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    justify-self: normal;
+}
+
+.kart_card__desc {
+    margin-bottom: 10px;
+}
+
+.kart_card__image {
+    width: 200px;
+    height: 100px;
+}

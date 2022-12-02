@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: "Hrot Premium",sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #002fa8;
+    font-style: italic;
+    font-size: 60px;
+}
+
+.kart_card__title {
+    font-family: "Hrot Premium",sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000000;
+    font-style: italic;
+    font-size: 30px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
+}
