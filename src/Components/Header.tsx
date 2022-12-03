@@ -7,7 +7,7 @@ const Header = () => {
             <div className="header_menu">
                 <nav className="menu__nav">
                     <div className="nav__logo">
-                        logo
+                        <img src={require("../Img/blue_transp_white_200.png")} width="100" alt="logo"/>
                     </div>
                     <div className="nav__links">
                         <ul>
