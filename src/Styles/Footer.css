@@ -1,34 +1,100 @@
-*, li {
-    margin: 0;
-    padding: 0;
-    height: fit-content;
+*, li{
+    margin: 0px;
+    padding: 0px;
+    color: white;
 }
 
 footer {
-    background-color: #161616;
     width: 100vw;
     max-width: 100%;
+    background-color: #161616;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    color: white;
+    justify-content: center;
     align-items: center;
-    padding: 50px;
-}
-
-.footer__logo {
-    width: 250px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .footer__container {
     display: flex;
-    color: white;
-    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    width: 70%;
+    margin: 50px;
+    gap: 32px;
 }
 
-.footer__container > * {
-    padding: 20px;
+.footer__content {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 64px;
+}
+
+.footer__company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 23px;
+    width: 25%;
+}
+
+.footer__company__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 19px;
+}
+
+.footer__company__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+}
+
+
+
+.footer__company__socials {
+    width: 132px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__links {
+    outline: white dotted 1px;
+    width: 35%;
+    gap: 32px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__link__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.footer__link__list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contact__list {
+    width: 15%;
 }

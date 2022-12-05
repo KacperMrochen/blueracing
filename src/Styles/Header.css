@@ -26,7 +26,7 @@ ul {
     gap: 10px;
 }
 
-li {
+.header_menu li {
     display: flex;
     align-items: center;
     color: white;

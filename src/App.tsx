@@ -1,25 +1,50 @@
 import React from 'react';
+import Layout from './Layout';
 import './Styles/App.css';
-import Header from './Components/Header';
-import Kart from './Components/Kart';
-import Races from './Components/Races';
-import QuoteBlock from './Components/QuoteBlock';
-import Video from './Components/Video';
-import Banner from './Components/Banner';
-import Footer from './Components/Footer';
+import { Home, About, Praga} from './pages'
+//import { useRoutes } from 'react-router-dom';
+import ErrorPage from './Error';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
+
+  /*
+    const route = useRoutes([
+      {
+        path: '/',
+        element: <Layout/>,
+        children: [
+          {
+            index: true,
+            element: <Home/>,
+          },
+          {
+            path: "about",
+            element: <About/>,
+          },
+          {
+            path: "praga",
+            element: <Praga/>,
+          },
+          {
+            path: "*",
+            element: <ErrorPage/>,
+          }
+        ]
+      }
+    ]) 
+  */
+
   return (
     <div className="App">
-      <Header></Header>
-      {/*<Kart></Kart>
-        <QuoteBlock></QuoteBlock>
-      <Races></Races>
-      <Video></Video>
-      <Banner></Banner>
-      */} 
-      
-      <Footer></Footer>
+        <Layout>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/about' element={<About/>}/>
+            <Route path='/praga' element={<Praga/>}/>
+            <Route path='*' element={<ErrorPage/>}/>
+          </Routes>
+        </Layout>      
     </div>
   );
 }
