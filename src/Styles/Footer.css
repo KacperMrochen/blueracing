@@ -5,23 +5,27 @@
 }
 
 footer {
-    width: 100vw;
-    max-width: 100%;
+    width: 100%;
     background-color: #161616;
     color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+h5 {
+    font-size: 20px;
+}
+
 .footer__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 80%;
     margin: 50px;
     gap: 32px;
 }
@@ -30,7 +34,7 @@ footer {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
     gap: 64px;
 }
@@ -60,7 +64,20 @@ footer {
     gap: 27px;
 }
 
+.footer__links-table {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
+.footer__categories {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__categories h5 {
+    width: 150px;
+}
 
 .footer__company__socials {
     width: 132px;
@@ -69,20 +86,17 @@ footer {
 }
 
 .footer__links {
-    outline: white dotted 1px;
-    width: 35%;
     gap: 32px;
-    padding: 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-evenly;
+    align-items: baseline;
 }
 
-.footer__link__list {
+.footer__links .footer__link__list {
     display: flex;
     flex-direction: column;
-    gap: 24px;
     justify-content: space-between;
+    width: 150px;
 }
 
 .footer__link__list ul {
@@ -95,6 +109,12 @@ footer {
     padding: 0px;
 }
 
-.contact__list {
-    width: 15%;
+.contact-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__categories, .footer__links {
+    flex-wrap: wrap;
 }

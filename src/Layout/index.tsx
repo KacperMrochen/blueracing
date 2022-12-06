@@ -1,17 +1,17 @@
-import React from "react";
+import * as React from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
 
-const Layout = (props) => {
+const Layout: React.FunctionComponent<{ children: object}> = (props) => {
     return (
-        <div>
+        <>
             <Nav/>
+                {console.log(props.children)}
                 {props.children}
-                <Outlet />
+                <Outlet /> 
             <Footer/>
-        </div>
-        
+        </>
     )
 }
 
