@@ -8,7 +8,7 @@ footer {
     width: 100%;
     background-color: #161616;
     color: #FFFFFF;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@ h5 {
     justify-content: center;
     align-items: center;
     width: 80%;
-    margin: 50px;
+    margin:  50px 0px;
     gap: 32px;
 }
 
@@ -96,6 +96,7 @@ h5 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 20px;
     width: 150px;
 }
 
@@ -109,10 +110,15 @@ h5 {
     padding: 0px;
 }
 
-.contact-list{
+.footer__link__list:not(.contact-list){
+    align-items: center;
+}
+
+.contact-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 25%;
 }
 
 .footer__categories, .footer__links {
