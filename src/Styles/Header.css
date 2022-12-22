@@ -5,31 +5,48 @@ header {
     background: #161616;
 }
 
+.nav__logo {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+}
+
 .header__nav {
     display: flex;
     justify-content: space-between;
     position: relative;
     width: 90%;
     height: 100px;
-    max-width: 1000px;
+    max-width: 1200px;
     align-items: center;
 }
 
 .nav__menu ul {
-    display: inline-flex;
-    gap: 24px
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    font-family: "Hrot Premium",sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
 }
 
 .nav__links {
     display: flex;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
     gap: 5px;
+    width: 15%;
 }
 
-.nav__links div:first-child {
+.nav__links div {
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
+
+.nav__links div img {
+    height: 16px;
+}
+
 
 button {
     display: none;
@@ -39,7 +56,7 @@ button {
     translate: 0px 10px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 890px) {
     button {
         display: block;
         z-index: 1000;

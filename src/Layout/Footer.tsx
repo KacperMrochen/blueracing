@@ -3,7 +3,6 @@ import '../Styles/Footer.css';
 
 const Footer = ():any => {
     return (
-        <>
             <footer>
                 <div className="footer__container">
                     <div className="footer__content">
@@ -26,9 +25,9 @@ const Footer = ():any => {
                                 </div>
                             </div>
                             <div className="footer__company__socials">
-                                <p>fb</p>
-                                <p>insta</p>
-                                <p>whatsapp</p>
+                                <img src={require("../Img/icons/facebook.png")} alt="facebook"/>
+                                <img src={require("../Img/icons/instagram.png")} alt="instagram"/>
+                                <img src={require("../Img/icons/email.png")} alt="facebook"/>
                             </div>
                         </div>
                             <div className="footer__links">
@@ -70,7 +69,6 @@ const Footer = ():any => {
                     <div className="footer__copyright">Copyright © 2022 blueracing</div>
                 </div>
             </footer>
-        </>
     )
 }
 

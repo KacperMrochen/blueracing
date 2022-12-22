@@ -7,7 +7,6 @@ const Layout: React.FunctionComponent<{ children: object}> = (props) => {
     return (
         <>
             <Nav/>
-                {console.log(props.children)}
                 {props.children}
                 <Outlet /> 
             <Footer/>

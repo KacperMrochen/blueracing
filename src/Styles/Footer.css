@@ -2,6 +2,11 @@
     margin: 0px;
     padding: 0px;
     color: white;
+    
+}
+
+ul {
+    gap: 10px;
 }
 
 footer {
@@ -14,6 +19,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 h5 {
@@ -64,6 +70,10 @@ h5 {
     gap: 27px;
 }
 
+.footer__company__desc p {
+    line-height: 150%;
+}
+
 .footer__links-table {
     display: flex;
     flex-direction: column;
@@ -103,14 +113,13 @@ h5 {
 .footer__link__list ul {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
     list-style: none;
     margin: 0px;
     padding: 0px;
 }
 
-.footer__link__list:not(.contact-list){
+.footer__link__list:not(.contact-list), .footer__link__list:not(.contact-list) ul{
     align-items: center;
 }
 

@@ -1,0 +1,16 @@
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page > *{
+    opacity: 0;
+    transform: translateX(-200px);
+}
+
+.page.show > *{
+    opacity: 1;
+    transform: translateX(0px);
+    transition: 1s;
+}

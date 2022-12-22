@@ -1,13 +1,24 @@
 import React from "react";
-import "../Styles/Header.css"
+import "../Styles/Hero.css"
+import Post from "./Post";
+import { Link } from "react-router-dom";
 
-const Hero = () => {
+interface HeroProps {
+    id: number;
+    title: string;
+    description: string;
+    article_text: string;
+    header_image: string;
+  }
+
+const Hero = ({title, header_image, description, article_text, id}: HeroProps) => {
+    
     return (
-        <header className="header">
-            <div className="header__hero">
-                <img src={require("../Img/blue_white_blue1200.png")} alt="" />
+            <div className="hero">
+                <h1>{title}</h1>
+                <img src={header_image} alt='xxx'></img>
+                <Link to={`/posts/`+id}><button>Read more</button></Link>
             </div>
-        </header>
     )
 }
 

@@ -1,4 +1,12 @@
 .home {
     width: 100%;
-    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(6, 6, 138);
+    padding: 50px;
+}
+
+.home > * {
+    color: black;
 }

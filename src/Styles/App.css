@@ -1,3 +1,10 @@
+:root  {
+    --var1: #DE883A;
+    --var: #FEF772;
+    --var3: #092EA2;
+    --var4: #101010;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +20,7 @@ h2 {
     font-family: "Hrot Premium",sans-serif;
     font-weight: 900;
     text-transform: uppercase;
-    color: #002fa8;
+    color: var(--var3);
     font-style: italic;
     font-size: 60px;
 }

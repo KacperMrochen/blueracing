@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
 
     const [ active, setActive ] = useState(false);
-
+    
     return (
         <header>
             <nav className="header__nav">
@@ -22,22 +22,16 @@ const Nav = () => {
                 <div className={active?"nav__menu expanded":"nav__menu"}>
                     <ul>
                         <Link to="/about"><li>O NAS</li></Link>
-                        <Link to="/zawody"><li>ZAWODY</li></Link>
-                        <Link to="/"><li>ZAWODNICY</li></Link>
+                        <Link to="/posts"><li>POSTY</li></Link>
+                        <Link to="/races"><li>ZAWODY</li></Link>
+                        <Link to="/drivers"><li>ZAWODNICY</li></Link>
                         <Link to="/praga"><li>PRAGA</li></Link>
                     </ul>
                 </div>
                 <div className='nav__links'>
-                    <div>
-                        <div>logo</div>
-                        <div>logo</div>
-                        <div>logo</div>
-                        <div>logo</div>
-                    </div>
-                    <div><p>Plain text</p></div>
-                    <div><p>Plain text</p></div>
+                    <div><img src={require("../Img/icons/phone-call.png")} alt="phone number"/><p>123 456 789</p></div>
+                    <div><img src={require("../Img/icons/pin.png")} alt="location"/><p>Gminna 36G 05-506 Lesznowola</p></div>
                 </div>
-                
             </nav>
         </header>  
     )
