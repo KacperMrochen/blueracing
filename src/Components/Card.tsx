@@ -1,6 +1,11 @@
 import React from "react";
 
-const Card = (props) => {
+type CardProps = {
+    id: number,
+    name: string,
+}
+
+const Card = (props: CardProps) => {
 
     const cardStyle = { 
         height: '50%', 
@@ -8,10 +13,9 @@ const Card = (props) => {
     }
 
     return (
-        <div className="card" style={props.style}>
+        <div className="card">
             <div className="card__image" style={cardStyle}></div>
-            <h2>{props.title}</h2>
-            <p>{props.myKey}</p>
+            <h2>{props.name}</h2>
         </div>
     )
 }

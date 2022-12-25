@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from 'react';
-import Card from "./Card.js";
+import Card from "./Card";
 import '../Styles/Carousel.css';
 import { useSpringCarousel } from 'react-spring-carousel'
 
@@ -10,28 +10,17 @@ const Carousel = () => {
 
   const cards = [
     {
-      "title" : "Oliwia Wiśniowska",
+        "name" : "Dragon",
     },
     {
-
-      "title" : "Item 2",
+        "name" : "Dark",
     },
     {
-
-      "title" : "Item 3",
+        "name" : "Mini",
     },
     {
-
-      "title" : "Item 4",
+        "name" : "Baby",
     },
-    {
-
-      "title" : "Item 5",
-    },
-    {
-
-      "title" : "Item 6",
-    }
   ];
 
   const [windowSize, setWindowSize] = useState(window.innerWidth);
@@ -45,17 +34,17 @@ const Carousel = () => {
   const { carouselFragment,
           thumbsFragment,
           useListenToCustomEvent,
-          slideToPrevItem, 
+          slideToPrevItem,
           slideToNextItem,
           slideToItem,
   } = useSpringCarousel({
     withLoop: true,
-    withThumbs: true, 
+    withThumbs: true,
     itemsPerSlide: windowSize > 800 ? 3 : 1,
     items: cards.map((i, index) => ({
       id: index,
       renderItem: (
-        <Card title={i.title} style={index !== activeItem ? {opacity: 0.5,  transform: 'scale(0.7)', transition: '0.25s'} : {opacity: 1, transform: 'scale(1)', transition: '0.25s'}}></Card>
+        <Card name={i.name} style={index !== activeItem ? {opacity: 0.5,  transform: 'scale(0.7)', transition: '0.25s'} : {opacity: 1, transform: 'scale(1)', transition: '0.25s'}}></Card>
       ),
       renderThumb: (
         <div 
@@ -74,9 +63,9 @@ const Carousel = () => {
   return (
     <div className="container">
       <div className='carousel'>
-            <button className="carousel__btn prev" onClick={slideToPrevItem}>{"<"}</button>
+            <button className="carousel__btn prev" onClick={slideToPrevItem}>Prev</button>
             {carouselFragment}
-            <button className="carousel__btn next" onClick={slideToNextItem}>{">"}</button>
+            <button className="carousel__btn next" onClick={slideToNextItem}>Next</button>
       </div> 
         <div className="actualState">{thumbsFragment}</div> 
     </div>

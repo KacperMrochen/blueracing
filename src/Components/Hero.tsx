@@ -1,6 +1,6 @@
 import React from "react";
 import "../Styles/Hero.css"
-import Post from "./Post";
+//import Post from "./Post";
 import { Link } from "react-router-dom";
 
 interface HeroProps {
@@ -11,14 +11,18 @@ interface HeroProps {
     header_image: string;
   }
 
-const Hero = ({title, header_image, description, article_text, id}: HeroProps) => {
+const Hero = ({title, header_image, description, id}: HeroProps) => {
     
     return (
-            <div className="hero">
-                <h1>{title}</h1>
-                <img src={header_image} alt='xxx'></img>
-                <Link to={`/posts/`+id}><button>Read more</button></Link>
+        <div className='hero'>
+            <img src={header_image} alt="..."/>
+            <div className='content'>
+                <h2 className="hero__title">{title}</h2>
+                <p className="hero__desc">{description}</p>
+                <Link to={"/posts/"+id}><button>Read more</button></Link>
             </div>
+            <div className='image'/>
+        </div>
     )
 }
 

@@ -27,7 +27,6 @@ export const Posts = () => {
       <div className='latest-article'>
         <div>
           <h1>Latest article</h1>
-          
           <p>Description</p>
         </div>
         <div>
@@ -35,11 +34,7 @@ export const Posts = () => {
         </div>
         </div>
         <div className='more-articles'>
-          <div className='more-articles-wrapper'>
-          {/*
-          {posts.map((el) => { return <Link to={`${el.id}`}>{el.title.rendered}</Link>})}
-          */}
-          </div>
+          <div className='more-articles-wrapper'></div>
         </div>
     </div>
   )
